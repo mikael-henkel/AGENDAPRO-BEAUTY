@@ -5,9 +5,6 @@ const port = process.env.PORT || 3001;
 const app = new express()
 app.use(express.json())
 
-app.get('/products', (req, res) => {
- res.json([{ id: 1, name: 'Produto Exemplo' }]);
-});
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
